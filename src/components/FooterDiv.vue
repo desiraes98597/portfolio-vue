@@ -1,0 +1,74 @@
+<template>
+
+
+ <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            Seattle through Olympia, WA
+                            <br />
+                            
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Denise Pedro</h4>
+                        <p class="lead mb-0">
+                           desiraes@gmail.com
+                            <!-- <a href="http://startbootstrap.com">Start Bootstrap</a> -->
+                        </p>
+                    </div>
+                </div> 
+                </div>
+            
+          
+        </footer>
+    </template>
+
+    <script>
+    export default{
+        name:'FooterDiv'
+    }
+    
+    </script>
+
+    <style scoped>
+
+
+.footer  {
+ padding-top:5rem;
+ padding-bottom:5rem;
+ background-color:#2c3e50;
+ height:auto;
+ color:white;
+}
+
+.mb-5 {
+    background-color: #623e80;
+    height:175px;
+    
+}
+
+.mb-4{
+     margin-bottom: 1.5rem !important;
+     margin-top: 1.5rem !important;
+}
+
+.col-lg-4 {
+  flex: 0 0 auto;
+  width: 30%;
+  margin-left: 5px;
+}
+    </style>
