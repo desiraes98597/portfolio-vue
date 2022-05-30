@@ -10,12 +10,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"> <router-link to="/">Home</router-link></li>
-                        <li class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"> <router-link to="Portfolio">Portfolio</router-link></li>
-                        <li class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"> <router-link to="resume">Resume</router-link></li>
-                        <li class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">  <router-link to="contact">Contact</router-link></li>
-                        <li class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded">  <router-link to="blog">Blog</router-link></li>
-                        <span class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded"><a v-on:click="logout" href="#">Logout</a></span>                    </ul>
+                        <li class="navbar-brand"> <router-link to="/">Home</router-link></li>
+                        <li class="navbar-brand"> <router-link to="Portfolio">Portfolio</router-link></li>
+                        <li class="navbar-brand"> <router-link to="resume">Resume</router-link></li>
+                        <li class="navbar-brand">  <router-link to="contact">Contact</router-link></li>
+                        <li class="navbar-brand">  <router-link to="blog">Blog</router-link></li>
+                        <span class="navbar-brand"><a v-on:click="logout" href="#">Logout</a></span>                    </ul>
                 </div>
             </div>
         </nav>
@@ -40,37 +40,50 @@ export default {
 
 <style scoped>
 
-.navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
 
 
+/* 
 
-/* .nav-link {
+.nav-link {
   display: block;
   padding: 0.5rem 1rem;
   color: teal;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-} */
+}
 
-/* .nav-link:hover, .nav-link:focus {
+.nav-link:hover, .nav-link:focus {
   color: #15967d;
-} */
+}
 
-/* .nav-tabs .nav-link {
+.nav-tabs .nav-link {
   margin-bottom: -0.125rem;
   background: none;
   border: 0.125rem solid transparent;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 } */
+
+.navbar-brand a {
+  text-decoration: none;
+  color:white;
+  font-size:17px;
+  margin-right: 5px;
+  padding:.5rem;
+ }
+
+.navbar-brand a:hover {
+    background-color:#15967d;
+    border-radius: 5px;
+ 
+}
+
+.current {
+    background-color:#15967d;
+    border-radius: 5px;
+ 
+}
+
 
 .page-section .page-section-heading {
     padding-top:3rem;

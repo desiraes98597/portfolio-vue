@@ -43,6 +43,11 @@ import NavPage from './NavPage.vue'
 import FooterDiv from './FooterDiv.vue'
 export default {
     name:"HomePage",
+    data(){
+      return {
+        name:''
+      }
+    },
     components:{
        NavPage,
        FooterDiv
@@ -50,6 +55,7 @@ export default {
        mounted()
         {
             let user=localStorage.getItem('user-info');
+            this.name=JSON.parse(user).name;
             if(!user)
             {
                 this.$router.push({name:"SignUp"})

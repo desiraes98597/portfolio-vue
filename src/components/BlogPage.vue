@@ -1,8 +1,8 @@
 <template>
 <NavPage />
-<h1>Hello user, Welcome to the Blog page</h1>
-<h1>Hello user, Welcome to the Blog page</h1>
-<h1>Hello user, Welcome to the Blog page</h1>
+<h1>Hello {{name}}, Welcome to the Blog page</h1>
+<h1>Hello {{name}}, Welcome to the Blog page</h1>
+<h1>Hello {{name}}, Welcome to the Blog page</h1>
 <FooterDiv />
 
 </template>
@@ -12,6 +12,11 @@ import NavPage from './NavPage.vue'
 import FooterDiv from './FooterDiv.vue'
 export default {
     name:"BlogPage",
+     data(){
+      return {
+        name:''
+      }
+    },
     components:{
        NavPage,
        FooterDiv
@@ -19,6 +24,7 @@ export default {
        mounted()
         {
             let user=localStorage.getItem('user-info');
+             this.name=JSON.parse(user).name;
             if(!user)
             {
                 this.$router.push({name:"SignUp"})
