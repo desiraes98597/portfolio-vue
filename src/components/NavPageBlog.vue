@@ -15,8 +15,7 @@
                         <li class="navbar-brand"> <router-link to="resume">Resume</router-link></li>
                         <li class="navbar-brand">  <router-link to="contact">Contact</router-link></li>
                         <li class="navbar-brand">  <router-link to="blog">Blog</router-link></li>
-                         
-                     </ul>
+                        <span class="navbar-brand"><a v-on:click="logout" href="#">Logout</a></span>                    </ul>
                 </div>
             </div>
         </nav>
@@ -42,28 +41,6 @@ export default {
 <style scoped>
 
 
-
-/* 
-
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: teal;
-  text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-}
-
-.nav-link:hover, .nav-link:focus {
-  color: #15967d;
-}
-
-.nav-tabs .nav-link {
-  margin-bottom: -0.125rem;
-  background: none;
-  border: 0.125rem solid transparent;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-} */
 
 .navbar-brand a {
   text-decoration: none;

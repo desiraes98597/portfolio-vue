@@ -1,24 +1,6 @@
-# resto-project
+For me to see the project run I have to use the cmd line on the db.json with the following operation:
+json-server  --watch db.json
+local server http://localhost:3000/users
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+I also have to have git running "npm run serve"
+which open in local server http://localhost:8000

@@ -1,5 +1,5 @@
 <template>
-    <img class="logo" src="../assets/img/bella1.jpg">
+    <img class="logo" src="../assets/img/newlogo.jpg">
     <h1>Login</h1>
     <div class="login">
         <input type="text" v-model="email" placeholder="Enter Email" />
@@ -35,7 +35,7 @@ methods: {
         if(result.status==200 && result.data.length>0)
                 {
                     localStorage.setItem("user-info", JSON.stringify(result.data[0]))
-                    this.$router.push({name:'HomePage'})
+                    this.$router.push({name:'BlogPage'})
          }
         console.warn(result)
     }
@@ -45,7 +45,7 @@ methods: {
             let user=localStorage.getItem('user-info');
             if(user)
             {
-                this.$router.push({name:"HomePage"})
+                this.$router.push({name:"BlogPage"})
             }
         }
 

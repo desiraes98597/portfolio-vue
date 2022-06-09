@@ -12,9 +12,9 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto">
-                        <p class="lead"></p>
+                <div class="row" >
+                    <div class="flex-child">
+                   
                         <h2>Contact</h2>
                         <p >______________</p>
                           <p>Olympia, WA</p>
@@ -37,9 +37,10 @@
                           <p>Access 2016 Essential Training</p>
                           <p>The Neuroscience of Learning</p>
                           <p>Instructional Design: Models of ID</p></div>
-                    <div class="col-lg-4 me-auto">
-                        <p class="lead"></p>
-                             <p class="large">Denise Pedro, Learner Experience Specialist for Amazon<br> Product Risk and Safety (PARS) Talent Development Team, Virtual</p>                            
+                    <!-- <div class="col-lg-4 me-auto"> -->
+                     <div class="flex-child">
+                   
+                             <p> <span class="purple"><em>Denise Pedro</em></span>, Learner Experience Specialist for Amazon<br> Product Risk and Safety (PARS) Talent Development Team, Virtual</p>                            
                         <h2><em>Summary</em></h2>
                         <p>
                         Innovative professional with 10+ years of marketing/advertising
@@ -183,4 +184,39 @@ export default {
 <style scoped>
 .page-section .page-section-heading {
     padding-top:3rem;
-}</style>
+}
+
+
+.row {
+ 
+  display: flex;
+  flex-wrap: wrap;
+
+ 
+}
+.flex-child {
+
+  flex: 1;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: left;
+  
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+.purple {
+  color: #623e80;
+  font-size:2rem;
+  font-weight:600;
+ 
+}
+
+h2 {
+   color: #623e80;
+}
+
+
+</style>

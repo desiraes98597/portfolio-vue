@@ -98,6 +98,6 @@ export default {
 
 <style>
 .page-section .page-section-heading {
-    padding-top:1rem;
+    padding-top:3rem;
 }
 </style>

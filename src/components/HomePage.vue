@@ -1,8 +1,15 @@
 <template>
 <NavPage />
+
   <section class="page-section home" id="index">
 
         <header class="masthead bg-primary text-white text-center">
+          <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                     <div class="row">
@@ -32,9 +39,13 @@
                 </div>
                 <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">Web Designer </p>
-          
+           
         </header>
         </section>
+
+               
+          
+      
 <FooterDiv />
 </template>
 
@@ -51,30 +62,35 @@ export default {
     components:{
        NavPage,
        FooterDiv
-       },
+       } ,
        mounted()
         {
             let user=localStorage.getItem('user-info');
-            this.name=JSON.parse(user).name;
             if(!user)
             {
                 this.$router.push({name:"SignUp"})
             }
-        }
-    
+        }   
 }
 </script>
 
-<style>
+<style scoped>
 
-/* @font-face {
+@font-face {
   font-family: "Amazon Ember";
-  src: url("./assets/fonts/AmazonEmber_W_Lt.woff") format("truetype");
+  src: url("../assets/fonts/AmazonEmber_W_Lt.woff") format("truetype");
   font-weight: 400;
-} */
+}
 
+.row {
+  margin-top:0px;
+}
+
+.page-section {
+  padding: 2rem 0;
+}
 .masthead {
-  padding-top: calc(6rem + 74px);
+  /* padding-top: calc(6rem + 74px); */
   padding-bottom: 6rem;
   
 }
