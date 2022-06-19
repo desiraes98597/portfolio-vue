@@ -1,6 +1,7 @@
-For me to see the project run I have to use the cmd line on the db.json with the following operation:
-json-server  --watch db.json
-local server http://localhost:3000/users
 
-I also have to have git running "npm run serve"
-which open in local server http://localhost:8000
+1. download project
+2. npm run serve
+3. open local host
+3. to activate the db file, from the cmd prompt json-server  --watch db.json from the command prompt. 
+
+(both json and the project server have to be running to get the login to work.)
